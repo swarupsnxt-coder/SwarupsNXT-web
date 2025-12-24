@@ -57,8 +57,8 @@ const Hero: React.FC = () => {
           poster="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1600&auto=format&fit=crop"
           className="w-full h-full object-cover opacity-80 sm:opacity-95 object-center scale-[1.05]"
         >
-          <source src="https://videos.pexels.com/video-files/20400845/20400845-uhd_2560_1440_24fps.mp4" type="video/mp4" />
-          <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+          <source src="/public/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+          <source src="/public/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" type="video/mp4" />
         </video>
       </div>
 
