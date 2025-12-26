@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
           className="w-full h-full object-cover opacity-80 sm:opacity-95 object-center scale-[1.05]"
         >
           <source src="/public/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" />
-          <source src="/public/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" type="video/mp4" />
+          <source src="/public/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" />
         </video>
       </div>
 
