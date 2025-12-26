@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { GoogleGenAI, Modality } from "@google/generative-ai";
+import { GoogleGenerativeAI, Modality } from "@google/generative-ai";
 
 const VoiceStudio: React.FC = () => {
   const [industry, setIndustry] = useState('Real Estate');
@@ -285,7 +285,7 @@ const VoiceStudio: React.FC = () => {
     addLog(`ENCODING VOCAL SIGNAL...`);
 
     try {
-      const ai = new GoogleGenAI({ apiKey });
+      const ai = new GoogleGenerativeAI({ apiKey });
       const voiceName = persona.voices[gender];
       
       const response = await ai.models.generateContent({
@@ -395,7 +395,7 @@ const VoiceStudio: React.FC = () => {
       
       try {
         if (apiKey) {
-          const ai = new GoogleGenAI({ apiKey });
+          const ai = new GoogleGenerativeAI({ apiKey });
           
           const gen = await ai.models.generateContent({
             model: "gemini-3-flash-preview",
