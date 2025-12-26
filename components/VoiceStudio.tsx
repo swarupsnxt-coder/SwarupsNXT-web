@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { GoogleGenAI, Modality } from "@google/genai";
+import { GoogleGenAI, Modality } from "@google/generative-ai";
 
 const VoiceStudio: React.FC = () => {
   const [industry, setIndustry] = useState('Real Estate');
