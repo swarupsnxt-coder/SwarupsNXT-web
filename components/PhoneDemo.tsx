@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { GoogleGenAI } from "@google/generative-ai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 interface PhoneDemoProps {
   openModal: () => void;
@@ -86,7 +86,7 @@ const PhoneDemo: React.FC<PhoneDemoProps> = ({ openModal }) => {
     if (!apiKey) return "I'm in standalone mode. Please configure the system API key.";
 
     try {
-      const ai = new GoogleGenAI({ apiKey });
+      const ai = new GoogleGenerativeAI({ apiKey });
       chatHistoryRef.current.push({ role: "user", parts: [{ text: userText }] });
 
       const response = await ai.models.generateContent({
